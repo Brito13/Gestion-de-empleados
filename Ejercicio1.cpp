@@ -24,8 +24,11 @@ int main(int argc, char const *argv[]){
      cout <<"3)Actualizar\n";
      cout <<"4)Borrar\n";
      cout <<"5)Salir\n";
-     cout <<"Introduzca la opcion:";
-     cin >> opcion;
+     do
+     {
+        cout <<"Introduzca la opcion:";
+        cin >> opcion;
+     } while (opcion > 5 || opcion < 1);
      if (opcion == 5){
         break;
      }
